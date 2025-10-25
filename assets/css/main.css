@@ -3722,3 +3722,7 @@ input, select, textarea {
 		justify-content: flex-start; /* Stops 'space-between' on mobile */
 	}
 }
+
+.project-header h3 a {
+	border-bottom: none;
+}
