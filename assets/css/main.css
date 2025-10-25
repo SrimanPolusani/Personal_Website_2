@@ -3700,24 +3700,25 @@ input, select, textarea {
 	flex-wrap: wrap; /* Lets them stack on small mobile screens */
 	gap: 1em; /* Adds a little space if they wrap */
 
-	/* THIS IS THE FIX: Replicates the h3's original default margin */
+	/* This applies the H3's default bottom margin to our new container */
 	margin-bottom: 0.75rem; 
 }
 
-/* Remove default margins from title/button inside this new wrapper */
+/* This removes the margin from the H3, so it's not applied twice */
 .project-header h3 {
 	margin-bottom: 0;
 }
 
+/* This removes default margins from the button list for alignment */
 .project-header .actions {
 	margin-top: 0;
 	margin-bottom: 0;
-	flex-shrink: 0; /* Prevents button from shrinking weirdly */
+	flex-shrink: 0; /* Prevents button from shrinking */
 }
 
 /* Fix for mobile */
 @media (max-width: 736px) {
 	.project-header {
-		justify-content: flex-start; /* Stop 'space-between' on mobile */
+		justify-content: flex-start; /* Stops 'space-between' on mobile */
 	}
 }
