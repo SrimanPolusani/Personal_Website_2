@@ -3719,3 +3719,8 @@ input, select, textarea {
 		justify-content: flex-start; /* Stop 'space-between' on mobile */
 	}
 }
+
+.panel.banner.color1-alt ul {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
