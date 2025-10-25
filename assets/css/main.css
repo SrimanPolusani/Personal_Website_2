@@ -3699,7 +3699,9 @@ input, select, textarea {
 	align-items: center; /* Vertically aligns the title and button */
 	flex-wrap: wrap; /* Lets them stack on small mobile screens */
 	gap: 1em; /* Adds a little space if they wrap */
-	margin-bottom: 1.5em; /* Adds space above the project description */
+
+	/* THIS IS THE FIX: Replicates the h3's original default margin */
+	margin-bottom: 0.75rem; 
 }
 
 /* Remove default margins from title/button inside this new wrapper */
@@ -3718,9 +3720,4 @@ input, select, textarea {
 	.project-header {
 		justify-content: flex-start; /* Stop 'space-between' on mobile */
 	}
-}
-
-.panel.banner.color1-alt ul {
-    margin-top: 0;
-    margin-bottom: 2em;
 }
